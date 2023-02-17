@@ -1,0 +1,2 @@
+execute if score destination mm.data matches 0..98303 unless score destination mm.data = destinationcopy mm.data as @e[type=marker,tag=mm.data.librarian] run function mm.data:calculateposition
+execute unless score destination mm.data matches 0..98303 run say I dont know that destination, it must be between 0 and 98303.

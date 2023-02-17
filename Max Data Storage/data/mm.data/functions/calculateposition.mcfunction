@@ -1,0 +1,9 @@
+scoreboard players operation destinationcopy mm.data = destination mm.data
+execute store result entity @s Pos[0] double 1 run scoreboard players operation destinationcopy mm.data %= 16 mm.data
+scoreboard players operation destinationcopy mm.data = destination mm.data
+scoreboard players operation destinationcopy mm.data /= 16 mm.data
+execute store result entity @s Pos[2] double 1 run scoreboard players operation destinationcopy mm.data %= 16 mm.data
+scoreboard players operation destinationcopy mm.data = destination mm.data
+scoreboard players operation destinationcopy mm.data /= 256 mm.data
+execute store result entity @s Pos[1] double 1 run scoreboard players operation destinationcopy mm.data -= 64 mm.data
+scoreboard players operation destinationcopy mm.data = destination mm.data
